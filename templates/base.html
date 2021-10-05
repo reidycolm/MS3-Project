@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,42 @@
         type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
-    {% endblock %}    
+    {% endblock %}
     <title>Recipe Cookbook</title>
 </head>
+
 <body>
+
+    <header>
+        <!--Top Navbar-->
+        <nav class="nav-extended text-shadow red accent-4">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('get_recipes') }}" class="brand-logo">Recipes</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">New Recipe</a></li>
+                    <li><a href="#">Manage Cuisines</a></li>
+                    <li><a href="#">Log Out</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Side Navbar-->
+        <ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align red-text text-darken-3">Recipe Cookbook</h4></li>
+            <li><a href="{{ url_for('get_recipes') }}">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">New Recipe</a></li>
+            <li><a href="#">Manage Cuisines</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </header>
 
     {% block content %}
     {% endblock %}
@@ -26,4 +59,5 @@
     {% block scripts %}
     {% endblock %}
 </body>
+
 </html>
