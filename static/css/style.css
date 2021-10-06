@@ -13,3 +13,9 @@
 .view-recipe-img {
     width: 90%;
 }
+
+.card-content h6 {
+    white-space: nowrap;
+    font-weight: bold;
+    text-decoration: underline;
+}
