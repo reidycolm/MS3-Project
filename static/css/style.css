@@ -38,3 +38,8 @@ p  {
     width: 100px;
     margin: 10px;
 }
+
+.cuisine-header {
+    color: black;
+    font-weight: bold !important;
+}

@@ -160,6 +160,21 @@ def delete_recipe(recipe_id):
     return redirect(url_for("get_recipes"))
 
 
+@app.route("/get_cuisines")
+def get_cuisines():
+    if "user" not in session:
+        return redirect(url_for("login"))
+
+    cuisines = list(mongo.db.cuisines.find().sort("cuisine_type", 1))
+
+    if session["user"] == "admin":
+        return render_template(
+            "cuisines.html", cuisines=cuisines, page_title="Cuisines")
+
+    flash("You do not have permission")
+    return redirect(url_for('login'))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
