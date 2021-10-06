@@ -7,6 +7,16 @@
         <form class="col s12" method="POST" action="">
           <div class="row">
             <div class="input-field col s6">
+                <i class="fas fa-flag prefix red-text text-darken-3"></i>
+                <select id="cuisine_type" name="cuisine_type" class="validate" required>
+                  <option value="" disabled selected>Choose Cuisine</option>
+                  {% for cuisine in cuisines %}
+                    <option value="{{ cuisine.cuisine_type }}">{{ cuisine.cuisine_type }}</option>
+                  {% endfor %}
+                </select>
+                <label for="cuisine_type">Cuisine Type</label>
+            </div>  
+            <div class="input-field col s6">
               <i class="fas fa-question prefix red-text text-darken-3"></i>
               <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50" type="text" class="validate" required>
               <label for="recipe_name">Recipe Name</label>
