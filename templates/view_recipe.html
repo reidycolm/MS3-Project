@@ -4,14 +4,38 @@
 <div class="container center-align">
     <div class="row">
         <div class="col s12">
-            <h3>{{ recipe.recipe_name }}</h3>
+            <h3 class="recipe-header">{{ recipe.recipe_name }}</h3>
         </div>
     </div>
     <div class="row">
         <div class="col s12">
             <img class="view-recipe-img" src="{{ recipe.image_url }}" alt="recipe photo">
         </div>
-        
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <p><strong> Preperation Time:</strong> {{ recipe.preperation_time }} mins</p>
+        </div> 
+        <div class="col s6">
+            <p><strong> Cooking Time:</strong> {{ recipe.cooking_time }} mins</p>
+        </div>
+    <div class="row">
+        <div class="col s12">
+            <p><strong>Serves:</strong> {{ recipe.serves }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h4>Ingrediants List:</h4>
+            <p class="ingrediants-text">{{ recipe.ingrediants }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h4>Method:</h4>
+            <p class="method-text">{{ recipe.method }}</p>
+        </div>
+    </div>    
     </div>
 
 
