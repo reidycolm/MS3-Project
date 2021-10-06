@@ -29,3 +29,7 @@
     white-space: pre-wrap;
     text-align: left;
 }
+
+p  {
+   white-space: nowrap; 
+}
