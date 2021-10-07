@@ -37,9 +37,9 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### Wireframes
 
-    * [Large screen]()
+    * [Large screen](/images/largescreenwireframe.png)
     
-    * [Small screen]()
+    * [Small screen](/images/smallscreenwireframe.png)
 
 ## Features
 
