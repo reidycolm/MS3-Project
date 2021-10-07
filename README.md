@@ -119,7 +119,7 @@ For my third project of the Code Institute course, I chose to make a recipe cook
     * **JavaScript**
         - [JsHint](/images/jshintvalidate.png) was used to validate the JavaScipt file of this project. No errors were found. 
 
-    * **PYTHON**
+    * **Python**
         - [PEP8](/images/pythonvalidate.png) was used to validate the Python file of this project. No errors were found.
 
 
@@ -133,6 +133,47 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
    
 ## Deployment
+
+The website was developed using Gitpod workspace to commit and push to GitHub. The project uses GitHub for hosting and has been deployed using Heroku.
+To access to my page please follow these steps:
+
+### Download
+
+1. Navigate to my repository [GitHub Repository](https://github.com/reidycolm/MS3-Project) 
+2. Click the **Code** button.
+3. Click the **Download Zip**.
+4. Extract where you want to keep all files.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/reidycolm/MS3-Project)
+2. Under the repository name, click the "Code" button and a dropdown menu will appear.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+### Heroku Deployment
+
+1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
+
+    `pip3 freeze > requirements.txt`
+
+2. Create a Procfile file by running the following command in the CLI;
+
+    `echo web: python app.py > Procfile`
+
+3. git add and git commit the new requirements and Procfile and then git push the project to GitHub.
+3. Log in to [Heroku](https://dashboard.heroku.com/apps).
+4. Select "New" on your dashboard and then select "Create new app".
+5. Choose a name for your application, select your region, and then click "Create app".
+6. From the app dashboard, navigate to "Deploy" tab.
+7. From Deployment method select "Github" and confirm the linking of the Heroku app by clicking "Search" then select your repository name.
+8. Once you select your repository, click on "Connect".
+9. After you connected to your repository, click on "Settings" tab on your app dashboard, and click on "Reveal Config Vars" and add your configuration variables to Heroku.
+10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
+11. After you deployed your branch "Enable Automatic Deploys".
+12. Site is successfully deployed, any further changes will automatically be updated everytime they are commited and pushed on Github.
 
 ## Credits
 
