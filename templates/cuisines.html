@@ -19,7 +19,7 @@
                     <h6 class="card-title cuisine-header">{{ cuisine.cuisine_type }}</h6>
                 </div>
                 <div class="card-action">
-                    <a href="#" class="btn red">Delete</a>
+                    <a href="{{ url_for('delete_cuisine', cuisine_id=cuisine._id) }}" class="btn red">Delete</a>
                     <a href="{{ url_for('edit_cuisine', cuisine_id=cuisine._id) }}" class="btn green">Edit</a>
                 </div>
             </div>

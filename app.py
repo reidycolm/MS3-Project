@@ -201,6 +201,13 @@ def edit_cuisine(cuisine_id):
     return render_template("edit_cuisine.html", cuisine=cuisine)
 
 
+@app.route("/delete_cuisine/<cuisine_id>")
+def delete_cuisine(cuisine_id):
+    mongo.db.cuisines.remove({"_id": ObjectId(cuisine_id)})
+    flash("Cuisine Successfully Deleted")
+    return redirect(url_for("get_cuisines"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
