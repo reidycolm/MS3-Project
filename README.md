@@ -179,5 +179,17 @@ To access to my page please follow these steps:
 
 ### Code
 
+- The content I studied on the course during the Backend Development module was extremely helpful when creating this recipe application as it helped with getting all the functionality of the cookbook up and running.
 
-### Content
+- The "validateMaterializeSelect()" function in the script.js file was taken from the mini project directly to help validate the choose cuisine dropdown fields.
+
+- [Materialize](https://materializecss.com/) Library and Documentation was used throughout the html files to make site responsive on all devices as well as providing styling.
+
+
+### Content & Media
+
+-   All recipes and images were obtained from the [BBC Food](https://www.bbc.co.uk/food/recipes) website.
+
+-   All icons used were found through font awesome.
+
+-   This website was build for educational purpose only
