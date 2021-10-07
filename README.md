@@ -153,6 +153,52 @@ To access to my page please follow these steps:
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
+### Creating an Environment File
+
+Install Flask, in your terminal type `pip3 install Flask` , that sets up Flask functionality. Next you will need to create **env.py** file for storing sensitive data, 
+type `touch env.py` in terminal. This file should never be pushed to GitHub, so type `touch .gitignore` to be able to ignore it. Than open the **.gitignore** file and lets 
+ignore your **env.py** file typed:
+```
+env.py
+__pycache__/ 
+
+```
+save and close it.
+
+In the env.py file we need to hide several bits of data. Open env.py file and type:
+```
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "********")
+os.environ.setdefault("MONGO_URI", "********")
+os.environ.setdefault("MONGO_DBNAME", "recipe_cookbook")
+```
+Make sure that your env.py file isn't being tracked, type  `git status` and make sure that you can not see it listed.
+
+### MongoDB schema
+
+To create the data schema in your MongoDB Atlas, create a new database called **recipe_cookbook**, add three collections **cuisines**, **recipes**, **users**.
+* recipe_cookbook
+    * cuisines 
+        * _id:ObjectId
+        * cuisine_name
+    * recipes
+        * _id:ObjectId
+        * recipe_name 
+        * image_url
+        * preperation_time
+        * cooking_time
+        * serves
+        * ingredients
+        * method
+        * created_by
+    * users
+        * _id:ObjectId
+        * username
+        * password    
+
 ### Heroku Deployment
 
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
