@@ -43,6 +43,21 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 ## Features
 
+-    **Search Function**
+        - Alows user the filter recipie list and will only shows results that match with user input. This feature allows for instant results and will also show flash messages when no results are found. Reset button brings the user quickly back to the main page.
+
+-    **User Registration**
+        - Provides functionality for user to create a profile and his/hers information stored on a linked database. User will be given feedback during sign up if the username they are trying to take is already is use and/or their passwords don't match. This ensures the user doesn't spell their passsord incorrecly and can't remember login details. This also allows for a users name to show on the recipe info card so it's users are given credit for adding new recipes to the site.
+
+-    **New/Edit/Delete Recipe**
+        - User is able to add a new recipe to the database when they have successfully registered in the form of input fields. This allows for the user to customize what will appear on the cookbook for others. In addition the this, the edit recipie button ensures recipies can be updated at any time. Users are only able to edit the recipes that they have entered themsevles thanks to the profile feature. Delete button ensure all recipe information is removed from database if user so wishes.
+
+-    **Navigation Bar**
+        - The nav bar was created using the materialize framework and shows differnt links depending on the user being signed in or now. On smaller screen, navigation will be present in the form of a hamburger icon. When selected, the nav links will appear on screen sliding in from the left hand side.
+
+
+-    **Add/Edit/Delete Cuisines** 
+        - This feature is only visible to the admin of the website. This was done using custom python code in the app.py file. Admin is able to add cusines to the cookbooks databse and this will then be immediately reflected throughout the application. Same applies for editing or deleting if the admin so chooses.
 
 
 ## Technologies Used
@@ -82,6 +97,3 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 
 ### Content
-
-
-### Media
