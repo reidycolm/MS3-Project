@@ -28,6 +28,12 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### Design
 
+    * **Colour Scheme:** I chose a white background for the majority of the website as I wanted the contents of the recipes and all other information to be as easy to read as possible. I used a lot of the same colours on each of the buttons so that the user would be familiar with them. For example, the red buttons are generally for reseting or deleting information where as the green ones are for editing or submiting new information.
+
+   * **Icons:** The icons used in this project help guide the user throughout the cookbook. On the form to add new recipes, they greatly improve the experience and show what information needs to be added in each of the input fields.
+
+    * **Images:** On the main landing page of the project, I used a card-panel containing an image of the finished recipe to help the user decide what they would like to try. For me I felt adding images was essential as they play an important role in user experience. Everyone likes to see what they're going to be making! 
+
 
 - #### Wireframes
 
