@@ -10,7 +10,7 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### User Goals
 
-    1. I want the cookbook to be easy to use. I would very much like if there was a search feature availible on the website as it would make it so much easier to find a recipe that contains ingrediants I need to use up.
+    1. I want the cookbook to be easy to use. I would very much like if there was a search feature available on the website as it would make it so much easier to find a recipe that contains ingredients I need to use up.
 
     1. I want to be able to add my own recipe. It would be cool to be allowed contribute to the contents of the cookbook and share my own recipes with other people.
 
@@ -19,7 +19,7 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### Developers Goals
 
-    1. I want to be able to add/remove cuisine types in the cookbook. It's important to have a wid
+    1. I want to be able to add/remove cuisine types in the cookbook. It's important to have a wide variety to choose from.
 
     1. I want to be able to edit recipes. Some users may need to use other ingrediants because of family dietry needs. I don't want any user who decided to use the cookbook to be left out
 
