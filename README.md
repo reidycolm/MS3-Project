@@ -64,10 +64,47 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### Languages
 
+    * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+    * [CSS3](https://en.wikipedia.org/wiki/CSS)
+    * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    * [Python](https://www.python.org/)
+
   
 
 - #### Frameworks, Libraries and Other Tools
 
+    * [MongoDB](https://www.mongodb.com/)
+        -   Database I used to store and retrieve input field information for the website.
+
+    * [Heroku](https://www.heroku.com/)
+        -   Used to deploy the application.
+
+    * [Balsamiq](https://balsamiq.com/)
+        -   Used to orginally design the recipe book and make custom wireframes.
+
+    * [Materialize](https://materializecss.com/)
+        -   Front End Framework that was used to style the majority of the application.
+
+    * [jQuery](https://jquery.com/)
+        -   Used to provide interactive design and form validation
+
+    * [Jinja](https://jinja.palletsprojects.com/)
+        -   Used to provide logic based design templates.
+
+    * [Gitpod](https://gitpod.io/)
+        -   Gitpod was the IDE I used when making this project
+
+    * [Git](https://git-scm.com/)
+        - Used for version control and allowed me to save my changes externally by committing to GitHub
+
+    * [Github](https://github.com/)
+        -  Was used to store files of the project that I had pushed using Git & Gitpod
+
+    * [Font Awesome](https://fontawesome.com/)   
+        - Site used to soruce icons for the webpage.
+
+    * [Lighthouse](https://developers.google.com/web/tools/lighthouse)   
+        - Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more.        
 
 ## Testing
 
@@ -75,8 +112,11 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
     * **HTML**
         
-
     * **CSS**
+
+    * **JSHINT**
+
+    * **PEP8**
         
 
 
