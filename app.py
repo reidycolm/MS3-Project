@@ -17,6 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+
 # recipes
 @app.route("/")
 @app.route("/get_recipes")
@@ -24,12 +25,14 @@ def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
+
 # search
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("recipes.html", recipes=recipes)
+
 
 # user registration
 @app.route("/register", methods=["GET", "POST"])
@@ -62,6 +65,7 @@ def register():
 
     return render_template("register.html")
 
+
 # login
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -89,6 +93,7 @@ def login():
 
     return render_template("login.html")
 
+
 # profile
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
@@ -100,6 +105,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
+
 # logout
 @app.route("/logout")
 def logout():
@@ -107,6 +113,7 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
+
 
 # add recipe
 @app.route("/new_recipe", methods=["GET", "POST"])
@@ -129,6 +136,7 @@ def new_recipe():
 
     cuisines = mongo.db.cuisines.find().sort("cuisine_type", 1)
     return render_template("new_recipe.html", cuisines=cuisines)
+
 
 # edit recipe
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
@@ -153,11 +161,13 @@ def edit_recipe(recipe_id):
     return render_template(
         "edit_recipe.html", recipe=recipe, cuisines=cuisines)
 
-#view single recipe on seperate page
+
+# view single recipe on seperate page
 @app.route("/view_recipe/<recipe_id>")
 def view_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("view_recipe.html", recipe=recipe)
+
 
 # delete recipe
 @app.route("/delete_recipe/<recipe_id>")
@@ -165,6 +175,7 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Succesfully Deleted")
     return redirect(url_for("get_recipes"))
+
 
 # cuisines page that only appears for admin user
 @app.route("/get_cuisines")
@@ -181,6 +192,7 @@ def get_cuisines():
     flash("You do not have permission")
     return redirect(url_for('login'))
 
+
 # add cuisine
 @app.route("/new_cuisine", methods=["GET", "POST"])
 def new_cuisine():
@@ -192,6 +204,7 @@ def new_cuisine():
         flash("New Cusine Added")
         return redirect(url_for("get_cuisines"))
     return render_template("new_cuisine.html")
+
 
 # edit cuisine
 @app.route("/edit_cuisine/<cuisine_id>", methods=["GET", "POST"])
@@ -206,6 +219,7 @@ def edit_cuisine(cuisine_id):
 
     cuisine = mongo.db.cuisines.find_one({"_id": ObjectId(cuisine_id)})
     return render_template("edit_cuisine.html", cuisine=cuisine)
+
 
 # delete cuisine
 @app.route("/delete_cuisine/<cuisine_id>")
