@@ -122,6 +122,12 @@ For my third project of the Code Institute course, I chose to make a recipe cook
     * **Python**
         - [PEP8](/images/pythonvalidate.png) was used to validate the Python file of this project. No errors were found.
 
+- #### Lighthouse
+
+    * [**Large Screen Devices Results**](/images/lighthousebig.png)
+
+    * [**Small Screen Devices Results**](/images/lighthousesmall.png)
+
 
 - #### User Stories Testing    
 
