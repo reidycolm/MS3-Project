@@ -229,7 +229,7 @@ To create the data schema in your MongoDB Atlas, create a new database called **
 * recipe_cookbook
     * cuisines 
         * _id:ObjectId
-        * cuisine_name
+        * cuisine_type
     * recipes
         * _id:ObjectId
         * recipe_name 
