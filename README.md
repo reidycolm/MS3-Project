@@ -192,4 +192,4 @@ To access to my page please follow these steps:
 
 -   All icons used were found through font awesome.
 
--   This website was build for educational purpose only
+-   This website was built for educational purpose only
