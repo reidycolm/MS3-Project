@@ -21,7 +21,7 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
     1. I want to be able to add/remove cuisine types in the cookbook. It's important to have a wide variety to choose from.
 
-    1. I want to be able to edit recipes. Some users may need to use other ingrediants because of family dietry needs. I don't want any user who decided to use the cookbook to be left out
+    1. I want to be able to edit recipes. Some users may need to use other ingredients because of family dietry needs. I don't want any user who decided to use the cookbook to be left out.
 
     1.  I want my site to be secure. As an admin this is important. There needs to be functionality in place that will stop unwated changes to the cookbook. Users shouldn't be able to edit something they didn't submit.
   
@@ -132,25 +132,25 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 - #### User Stories Testing
 
-    1. **I want the cookbook to be easy to use. I would very much like if there was a search feature availible on the website as it would make it so much easier to find a recipe that contains ingrediants I need to use up.**
+    1. **I want the cookbook to be easy to use. I would very much like if there was a search feature available on the website as it would make it so much easier to find a recipe that contains ingredients I need to use up.**
         - [Search Feature](/images/userstory1.png) allows use to search entire collection of recipes. If the search word you entered is present in either the ingrediants list or the recipe name, it will appear instantly below the search area.
     
     1. **I want to be able to add my own recipe. It would be cool to be allowed contribute to the contents of the cookbook and share my own recipes with other people.**
         - [New Recipe Feature](/images/userstory2.png) gives the users of the this application, the ability to add their very own recipe and share their favourite meals with others so they can try them out. The information is then stored using mongodb but can be edited or deleted at any time by the user who first added it.
 
     1. **I would like a profile type feature on the website so I could keep track of who was posting what. If I'm sharing my own recipes, it's important to be given credit.**
-        - [User Registration/Profile Feature](/images/userstory3.png) ensures you will always be credited when posting your own recipe. On the bottom of each card panel on the recipes page, your name will appear.
+        - [User Registration/Profile Feature](/images/userstory3.png) ensures you will always be credited when posting your own recipe. On the bottom of each card panel on the recipes page, your username will appear.
 
 
 - #### Manual Testing (Repeated on various devices and browsers)
 
     *   **New/Edit/Delete Recipe**
-        -  To pass this test, I needed to make sure that when a new recipe was added, it appeared on the database and was displayed properly in the view_recipe file. Similarly, I have to check and see happened that when the Edit or Delete feature was used.
+        -  To pass this test, I needed to make sure that when a new recipe was added, it appeared on the database and was displayed properly in the view_recipe file. Similarly, I have to check and see if the correct functionality happened that when the Edit or Delete feature was used.
         -  The result was a pass.
 
 
     *   **New/Edit/Delete Cuisine**
-        -  To pass this test, I first neeeded to make sure thst the only user that had access to the cuisines aspect of the application was the admin. I did ths buy signing into a different user and checked to see if the nav links were correct for each user type. Secondly, I had to make sure the database and input fields were changed correctly when either to new/edit/delete functionality was called upon. 
+        -  To pass this test, I first neeeded to make sure that the only user that had access to the cuisines aspect of the application was the admin. I did ths by signing into a different user and checked to see if the nav links were correct for each user type. Secondly, I had to make sure the database and input fields were changed correctly when either the new/edit/delete functionality was called upon. 
         -  The result was a pass for both.
 
 
@@ -165,17 +165,17 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 
     *   **Search Recipes**
-        -  To pass this test, I checked to ensure that when an ingredient was searched for, only the corresponding recipes would appear below. I also tested to see if the correct flash message appeared when an empty search was entered. 
+        -  To pass this test, I checked to ensure that when an ingredient or recipe name was searched for, only the corresponding recipes would appear below. I also tested to see if the correct flash message appeared when an empty search was entered. 
         -  The result was a pass.
 
     *   **Buttons & Links**
         -  To pass this test, I made sure that every button and link that I implemented into the application did what they were supposed to do when clicked. For example, the view more button in the card panel loaded the correct view_recipe page.
-        -  The result was a pass.
+        -  The result were all passes.
 
 - #### Bugs
 
     * **Card Panel**
-        -  When I first implemented the card-panel on the recipes page, they were't aligned when a recipe with a long name was loaded in via the database. The header text would flow onto the line below causing the panel to become longer and made everything look out of position. In order to fix this, I wrote some css using the whitespace nowrap attributes. This fixed the bug.
+        -  When I first implemented the card-panel on the recipes page, they weren't aligned when a recipe with a long name was loaded in via the database. The header text would flow onto the line below causing the panel to become longer and made everything look out of position. In order to fix this, I wrote some css using the whitespace nowrap attributes. This fixed the bug.
 
    
 ## Deployment
