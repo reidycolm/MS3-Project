@@ -129,7 +129,16 @@ For my third project of the Code Institute course, I chose to make a recipe cook
     * [**Small Screen Devices Results**](/images/lighthousesmall.png)
 
 
-- #### User Stories Testing    
+- #### User Stories Testing
+
+    1. **I want the cookbook to be easy to use. I would very much like if there was a search feature availible on the website as it would make it so much easier to find a recipe that contains ingrediants I need to use up.**
+        - [Search Feature](/images/userstory1.png) allows use to search entire collection of recipes. If the search word you entered is present in either the ingrediants list or the recipe name, it will appear instantly below the search area.
+    
+    1. **I want to be able to add my own recipe. It would be cool to be allowed contribute to the contents of the cookbook and share my own recipes with other people.**
+        - [New Recipe Feature](/images/userstory2.png) gives the users of the this application, the ability to add their very own recipe and share their favourite meals with others so they can try them out. The information is then stored using mongodb but can be edited or deleted at any time by the user who first added it.
+
+    1. **I would like a profile type feature on the website so I could keep track of who was posting what. If I'm sharing my own recipes, it's important to be given credit.**
+        - [User Registration/Progile Feature](/images/userstory3.png) ensures you will always be credited when posting your own recipe. On the bottom of each card panel on the recipes page, your name will appear.
 
 
 - #### Manual Testing (Repeated on various devices and browsers)
