@@ -13,9 +13,9 @@
           <option value="" disabled>Choose Cuisine</option>
           {% for cuisine in cuisines %}
           {% if cuisine.cuisine_type == recipe.cuisine_type  %}
-          <option value="{{ cuisine.cuisine_type }}" selected>{{ cuisine.cuisine_type }}</option>
+            <option value="{{ cuisine.cuisine_type }}" selected>{{ cuisine.cuisine_type }}</option>
           {% else %}
-          <option value="{{ cuisine.cuisine_type }}">{{ cuisine.cuisine_type }}</option>
+            <option value="{{ cuisine.cuisine_type }}">{{ cuisine.cuisine_type }}</option>
           {% endif %}
           {% endfor %}
         </select>
