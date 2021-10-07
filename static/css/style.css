@@ -43,3 +43,13 @@ p  {
     color: black;
     font-weight: bold !important;
 }
+
+.search-box {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.search-button {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}

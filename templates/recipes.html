@@ -3,7 +3,7 @@
 
 <h3 class="red-text text-darken-4 center-align">All Recipes</h3>
 
-<div class="row card-panel grey lighten-5">
+<div class="row card-panel grey lighten-5 search-box">
     <form action="{{url_for('search') }}" method="post" class="col-s12">
         <div class="row center-align">
             <div class="input-field col s12">
@@ -13,10 +13,10 @@
             </div>
             <div class="row">
                 <div class="col s6">
-                    <a href="{{url_for('get_recipes') }}" class="red btn-large text-shadow">Reset</a>
+                    <a href="{{url_for('get_recipes') }}" class="red btn-large text-shadow search-button">Reset</a>
                 </div>
                 <div class="col s6">
-                    <button type="submit" class="green btn-large text-minus-shadow">
+                    <button type="submit" class="green btn-large text-minus-shadow search-button">
                     Search
                     </button>
                 </div>
