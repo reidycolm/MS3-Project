@@ -164,10 +164,9 @@ For my third project of the Code Institute course, I chose to make a recipe cook
         -  The result was a pass.
 
 
-    *   **User Authentication**
-        -  To pass this test, . 
+    *   **Search Recipes**
+        -  To pass this test, I checked to ensure that when an ingredient was searched for, only the corresponding recipes would appear below. I also tested to see if the correct flash message appeared when an empty search was entered. 
         -  The result was a pass.
-
 
 - #### Bugs
 
