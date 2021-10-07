@@ -69,7 +69,8 @@ For my third project of the Code Institute course, I chose to make a recipe cook
     * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     * [Python](https://www.python.org/)
 
-  
+
+
 
 - #### Frameworks, Libraries and Other Tools
 
@@ -142,6 +143,30 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 
 
 - #### Manual Testing (Repeated on various devices and browsers)
+
+    *   **New/Edit/Delete Recipe**
+        -  To pass this test, I needed to make sure that when a new recipe was added, it appeared on the database and was displayed properly in the view_recipe file. Similarly, I have to check and see happened that when the Edit or Delete feature was used.
+        -  The result was a pass.
+
+
+    *   **New/Edit/Delete Cuisine**
+        -  To pass this test, I first neeeded to make sure thst the only user that had access to the cuisines aspect of the application was the admin. I did ths buy signing into a different user and checked to see if the nav links were correct for each user type. Secondly, I had to make sure the database and input fields were changed correctly when either to new/edit/delete functionality was called upon. 
+        -  The result was a pass for both.
+
+
+    *   **Register User**
+        -  To pass this test, I checked to see if I could register a new user and that this information appeared under the user sesction in my database. I had to ensure that the input fields wouldn't accept being left blank and that the form would only submit the new user info to the database if both passwords were matching and that the username wasn't already being used by someone else. 
+        -  The result was a pass.
+
+
+    *   **Log In/Log Out**
+        -  To pass this test, I needed to see if to functionality was working accordingly. If the password isn't correct,a flash message should appear informing me. If correct,however, my profile should appear showing the name of the username I was just entered. I then needed to check if the page links and functionality changed when I logged out. For example, not being able to edit recipes etc.
+        -  The result was a pass.
+
+
+    *   **User Authentication**
+        -  To pass this test, . 
+        -  The result was a pass.
 
 
 - #### Bugs
