@@ -1,6 +1,6 @@
 # Recipe Cookbook
 
-![Device Showcase]("https://github.com/reidycolm/MS3-Project/blob/master/images/amiresponsive.png")
+![Device Showcase](/images/amiresponsive.png "Recipe Cookbook Responsive")
 
 ### View the live project [here.](https://ms3-project-recipe-cookbook.herokuapp.com/)
 
