@@ -175,6 +175,18 @@ def get_cuisines():
     return redirect(url_for('login'))
 
 
+@app.route("/new_cuisine", methods=["GET", "POST"])
+def new_cuisine():
+    if request.method == "POST":
+        cuisine = {
+            "cuisine_type": request.form.get("cuisine_type")
+        }
+        mongo.db.cuisines.insert_one(cuisine)
+        flash("New Cusine Added")
+        return redirect(url_for("get_cuisines"))
+    return render_template("new_cuisine.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
