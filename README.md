@@ -111,13 +111,16 @@ For my third project of the Code Institute course, I chose to make a recipe cook
 - #### Validators
 
     * **HTML**
+        - [The W3C Markup Validator](/images/htmlvalidate.png) was used to validate the HTML files of this project. No errors were found.
         
     * **CSS**
+        - [The W3C CSS Validator](/images/cssvalidate.png) was used to validate the CSS file of this project. No errors were found.
 
-    * **JSHINT**
+    * **JavaScript**
+        - [JsHint](/images/jshintvalidate.png) was used to validate the JavaScipt file of this project. No errors were found. 
 
-    * **PEP8**
-        
+    * **PYTHON**
+        - [PEP8](/images/pythonvalidate.png) was used to validate the Python file of this project. No errors were found.
 
 
 - #### User Stories Testing    
